@@ -14,5 +14,13 @@ def is_palindrome(word):
     else:
         return False
 
+def is_palindrome2(word):
+    if word.lower() == word[::-1].lower():
+        return True
+    else:
+        return False
 
-print(is_palindrome('Anna'))
+
+
+print(is_palindrome2('Annfda'))
+#print(is_palindrome('Anna'))
