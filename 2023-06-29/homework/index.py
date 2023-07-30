@@ -9,20 +9,18 @@ weight = input ('Enter your weight: ')
 height = input('Enter your height in cm: ')
 
 try:
-    int(weight)
-    int(height)
+    weight = int(weight)
+    height = int(height)
 except:
     print('Your entry is not correct')
 else:
-    index = (int(weight) / (int(height)/100)**2)
-
-print (index)
-
-if index < 18.5:
-    print('Недостатня маса тіла')
-elif index < 24.9:
-    print('Нормальна маса тіла')
-elif index < 29.9:
-    print('Надлишкова маса тіла')
-else:
-    print('Ожиріння')
+    index = (weight / (height/100)**2)
+    print (index)
+    if index < 18.5:
+        print('Недостатня маса тіла')
+    elif index < 24.9:
+        print('Нормальна маса тіла')
+    elif index < 29.9:
+        print('Надлишкова маса тіла')
+    else:
+        print('Ожиріння')
