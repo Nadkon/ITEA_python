@@ -3,11 +3,10 @@
 Уявіть, що дійсний пароль - "password123". Якщо введений пароль збігається, функція повинна повернути True, інакше - False.
 '''
 def check_password(password):
-    if password == 'password123':
-        return(True)
-    return(False)
+    return password == 'password123'
 
-#print(check_password('password123'))
+
+print(check_password('password123'))
 
 
 '''
@@ -49,4 +48,4 @@ def sign_in():
                 continue
     return("The user is not exist")
 
-print(sign_in())
+#print(sign_in())
