@@ -1,4 +1,10 @@
 numbers = [1,2,3,4,5]
+for number in numbers:
+    if number == 102:
+        break
+    print(number)
+else:
+    print('There was no break')
 
 #for num in numbers:
 #    print(num)
@@ -9,12 +15,15 @@ numbers = [1,2,3,4,5]
 #    index += 1
 
 
-count = input()
+count = int(input())
 
-index = 100
+index = 0
+#index = 100
 while index != count:
-    print(index)
     index += 1
-    if index == 105:
-        break
+    print(index)
+
+    #if index == 105:
+    #    break
+
 

@@ -21,8 +21,16 @@ password_list = [
 ]
 
 def sign_in(login, password):
-  
+  message = 'The user is not exist'
+  for user in password_list:
+    if user['login'] == login:
+      if user['password'] == password:
+        message = 'You can entry'
+      else:
+        message = "Your password is not valid"
+  return(message)
+
 
 login = input('login: ')
 password = input('password: ')
-sign_in(login, password)
+print(sign_in(login, password))
