@@ -20,7 +20,9 @@ def is_palindrome2(word):
     else:
         return False
 
+def is_palindrome3(word):
+    return word.lower() == word[::-1].lower()
 
 
-print(is_palindrome2('Annfda'))
+print(is_palindrome3('Anna'))
 #print(is_palindrome('Anna'))
