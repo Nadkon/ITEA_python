@@ -1,13 +1,15 @@
 import pygame
 
+from constants import WIDTH, HEIGHT
+
 # pygame setup
 pygame.init()
-screen = pygame.display.set_mode((1288, 720)) # задаємо розмір екрaну
+screen = pygame.display.set_mode((WIDTH, HEIGHT)) # задаємо розмір екрaну
 pygame.display.set_caption('Snake') # даємо назву вікну, де буде гра
 clock = pygame.time.Clock()   # створюємо обєкт годинника
 running = True
 
-rect = pygame.Rect(100, 100, 100, 100)
+rect = pygame.Rect(100, 100, 30, 30)
 
 while running:
     # poll for events
