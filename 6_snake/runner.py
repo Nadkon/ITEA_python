@@ -19,8 +19,15 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-
-
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                snake.move(pygame.K_UP)
+            if event.key == pygame.K_DOWN:
+                snake.move(pygame.K_DOWN)
+            if event.key == pygame.K_RIGHT:
+                snake.move(pygame.K_RIGHT)
+            if event.key == pygame.K_LEFT:
+                snake.move(pygame.K_LEFT)
 
     # fill the screen with a color to wipe away anything from last frame
     screen.fill('purple')
