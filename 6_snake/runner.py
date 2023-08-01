@@ -1,6 +1,8 @@
 import pygame
 
 from constants import WIDTH, HEIGHT
+from snake import Snake
+from apple import Apple
 
 # pygame setup
 pygame.init()
@@ -9,7 +11,7 @@ pygame.display.set_caption('Snake') # даємо назву вікну, де б�
 clock = pygame.time.Clock()   # створюємо обєкт годинника
 running = True
 
-rect = pygame.Rect(100, 100, 30, 30)
+snake = Snake(100,100)
 
 while running:
     # poll for events
@@ -18,10 +20,12 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+
+
     # fill the screen with a color to wipe away anything from last frame
     screen.fill('purple')
 
-    pygame.draw.rect(screen, 'red', rect)
+    snake.draw(screen)
 
     # RENDER YOUR GAME HERE
 
