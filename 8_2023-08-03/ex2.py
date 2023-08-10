@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 
-
+@dataclass
 class Square2:
 
+    def __init__(self, position: tuple[int, int], color: str = 'red'):
+        position: self.position
 
-    def __init__ (self, position: tuple[int, int], color: str: 'red'):
-    position: self.position
 
 
 @dataclass
