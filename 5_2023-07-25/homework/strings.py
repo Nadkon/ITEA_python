@@ -20,3 +20,11 @@ def string_for_reverse(input):
 
 print(string_for_reverse(["hello", "WORLD", "Python", "UPPERCASE"]))
 
+def string_for_reverse2(input):
+    newlist = [item if item.upper() != item else item[::-1] for item in input]
+    return newlist
+
+
+print(string_for_reverse2(["hello", "WORLD", "Python", "UPPERCASE"]))
+    #newlist = [x if x != "banana" else "orange" for x in fruits]
+
