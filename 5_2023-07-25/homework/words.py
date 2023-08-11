@@ -9,7 +9,7 @@ Input: "Це це тестовий текст. Тестовий текст дл�
 from collections import Counter
 
 def word_count(text):
-    word_counter = Counter(text.lower().replace('.', '').split())
+    word_counter = Counter(text.lower().replace('.', '').replace(',', '').replace('!', '').split())
     return word_counter
 
-print(word_count('Це це тестовий текст. Тестовий текст для тестування. Тест'))
+print(word_count('Це це тестовий! текст. Тестовий, текст! для, тестування. Тест'))
