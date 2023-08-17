@@ -1,8 +1,7 @@
 import pygame
-
-from constants import WIDTH, HEIGHT
-from snake import Snake
 from apple import Apple
+from constants import HEIGHT, WIDTH
+from snake import Snake
 
 # pygame setup
 pygame.init()

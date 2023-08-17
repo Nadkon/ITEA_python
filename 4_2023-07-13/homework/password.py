@@ -2,7 +2,9 @@
 Напишіть програму, яка імпортує модуль string та модуль random. Використовуйте функції цих модулів для генерації випадкового паролю. Попросіть користувача ввести довжину паролю, а потім використайте функцію random.choice для вибору випадкових символів з рядка string.ascii_letters + string.digits. Згенерований пароль виведіть на екран.
 '''
 
-import string, random
+import random
+import string
+
 
 def password_generator():
     try:

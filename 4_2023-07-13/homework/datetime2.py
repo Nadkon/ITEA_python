@@ -3,6 +3,7 @@
 '''
 
 import datetime
+
 now = datetime.datetime.now()
 date_time = now.strftime("%d %B %Y, %I:%M")
 print(f'Now is {date_time}')

@@ -1,6 +1,7 @@
 #Contect manager via function
 from contextlib import contextmanager
 
+
 @contextmanager
 def my_context_manager():
     print('Entering the context')

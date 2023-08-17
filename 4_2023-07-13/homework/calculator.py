@@ -4,6 +4,7 @@
 
 import math
 
+
 def circle_area():
   try:
     radius = int(input('Enter a circle radius: '))

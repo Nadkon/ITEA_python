@@ -1,6 +1,7 @@
 import pygame as pg
 from constants import SQUARE_HEIGHT, SQUARE_WIDTH
 
+
 class Snake:
 
     def __init__(self, x, y):

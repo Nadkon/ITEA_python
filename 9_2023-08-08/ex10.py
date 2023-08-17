@@ -2,6 +2,7 @@
 
 from datetime import datetime
 
+
 class TimestampMeta(type):
 
     def __init__(cls, name, bases, dct):
