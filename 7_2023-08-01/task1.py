@@ -3,7 +3,7 @@ def sum_recursive(n):
         return 1
     return n + sum_recursive(n - 1)
 
-#print(sum_recursive(10))
+print(sum_recursive(10))
 
 
 def fibanacci_reccursive(n):
@@ -20,4 +20,4 @@ def fibanacci_by_for(n):
           a, b = b, a + b
      return (a)
 
-print(fibanacci_by_for(5))
+#print(fibanacci_by_for(5))
